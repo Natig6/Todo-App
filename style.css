@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: #444;
+}
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 20px auto;
+
+  box-shadow: 0 0 10px 10px #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#page-banner {
+  padding: 40px;
+  text-align: center;
+  background: #ccc;
+  margin-bottom: 20px;
+}
+#page-banner h2 {
+  font-size: 3rem;
+  margin: 10px;
+}
+#page-banner input {
+  border: none;
+  padding: 3px;
+  font-size: 1rem;
+  width: 14rem;
+  outline: none;
+}
+#page-banner input::placeholder {
+  color: #888;
+}
+#book-list {
+  padding: 10px 30px;
+}
+#book-list li {
+  list-style: none;
+  padding: 1.2rem;
+  margin: 0.7rem;
+  border-left: 5px solid #ccc;
+  transition: all 0.3s ease;
+}
+#book-list li:hover {
+  border-color: #9361bf;
+}
+#book-list li:nth-child(odd) {
+  /* background: #ddd; */
+}
+
+#book-list li .name {
+  position: relative;
+  left: 30px;
+}
+#book-list li .delete {
+  position: absolute;
+  right: 330px;
+  background: #9361bf;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  padding-top: 7px;
+}
+#book-list li .delete:hover {
+  cursor: pointer;
+}
+#add-books {
+  width: 400px;
+  margin: 0 auto;
+}
+#add-books input[type="text"] {
+  display: block;
+  border-radius: 4px 0 0 4px;
+  float: left;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 300px;
+  outline: none;
+  /* border: none; */
+}
+#add-books button {
+  float: left;
+  border: 1px solid #9361bf;
+  background: #9361bf;
+  padding: 10px 20px;
+  font-size: 16px;
+  display: inline-block;
+  margin: 0;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  width: 100px;
+  margin: 20px 0;
+  border-left: 0;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+#add-books:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#add-books #hide {
+  width: 20px;
+  cursor: pointer;
+}
+#add-books label {
+  line-height: 52px;
+  cursor: pointer;
+}
+#add-books button:hover {
+  cursor: pointer;
+}
+#tabbed-content li {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+}
+#tabbed-content .panel {
+  display: none;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+#tabbed-content .panel.active {
+  display: block;
+}

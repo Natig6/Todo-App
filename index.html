@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4ff912b5fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--the Header part-->
+      <header>
+        <div id="page-banner">
+          <h2 class="title">Birana Book Store</h2>
+          <p>Books from <em>Rohas</em> to the <em>Rohas</em></p>
+          <form action="#" id="search-books">
+            <input type="text" placeholder="Search books..." />
+          </form>
+        </div>
+      </header>
+      <!--The list of the books section-->
+      <div id="book-list">
+        <ul>
+          <li>
+            <span class="name">Fikir Eske Mekabir</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="name">Sememen</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="name">Merbebt</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="name">Gzuara</span>
+            <span class="delete">delete</span>
+          </li>
+        </ul>
+      </div>
+      <form id="add-books">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide the books</label>
+        <input type="text" placeholder="Add books" />
+        <button>Add</button>
+      </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-another="#about" class="active">About</li>
+          <li data-another="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>content for about the tab...</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            Alias reprehenderit repellendus recusandae beatae necessitatibus
+          </p>
+        </div>
+        <div class="panel" id="contact">
+          <p>content for contact the tab...</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            perferendis earum soluta sequi nemo aspernatur facilis tempore aut.
+            Alias reprehenderit repellendus recusandae beatae necessitatibus
+            Alias reprehenderit repellendus recusandae beatae necessitatibus
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
